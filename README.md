@@ -1,6 +1,7 @@
 # vue-scss
 
 > A Vue.js project that uses SCSS. it is a modified project from vue-cli.
+  This works for webpack 2.3. Before version 2.1 vue-loader configured SCSS for vue files differently.
 
 ## Build Setup
 
