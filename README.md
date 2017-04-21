@@ -1,6 +1,6 @@
 # vue-scss
 
-> A Vue.js project
+> A Vue.js project that uses SCSS. it is a modified project from vue-cli.
 
 ## Build Setup
 
