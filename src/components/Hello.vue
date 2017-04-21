@@ -17,7 +17,7 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
-    <p>cool stuff</p>
+    <p>This should be blue from importing from a SCSS external file.</p>
   </div>
 </template>
 
@@ -36,12 +36,17 @@ export default {
 <style lang="scss" scoped>
 
 @import "../assets/scss/input.scss";
-$font: underline;
-$primary-color: green;
+
+$bold: bold;
+$underline: underline;
+$header-color: green;
+$display: inline-block;
+$link-color: #42b983;
+
 h1, h2 {
-  font-weight: normal;
-  text-decoration: $font;
-  color: $primary-color;
+  font-weight: $bold;
+  text-decoration: $underline;
+  color: $header-color;
 }
 
 ul {
@@ -50,11 +55,11 @@ ul {
 }
 
 li {
-  display: inline-block;
+  display: $display;
   margin: 0 10px;
 }
 
 a {
-  color: #42b983;
+color: $link-color;
 }
 </style>
